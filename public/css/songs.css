@@ -1,0 +1,297 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(25, 25, 25, 255);
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.container-small {
+  padding: 0 5px;
+  margin: 0 auto;
+  max-width: 1180px;
+  width: 100%;
+}
+.flex-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* NavBar */
+.navigation {
+  background-color: black;
+  align-items: center;
+}
+.menu-items ul li {
+  font-weight: bold;
+  padding: 20px;
+  list-style: none;
+  
+}
+.brand-logo{
+  padding-top: 7px;
+  /* position: relative; */
+}
+.greetings{
+  padding: 11px 21px;
+  font-size: xx-large;
+}
+a.greetings {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  margin-top: 16px
+}
+.menu-items ul li a {
+  padding: 7px 15px;
+  border: 1px solid transparent;
+}
+.menu-items ul li a:hover {
+  border-radius: 50px;
+  background-color: red;
+}
+.menu-items .li-selected {
+  border: 1px solid #022032;
+  border-radius: 50px;
+  background-color: #022032;
+}
+.menu-items ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.songlist {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 82px;
+}
+.songlistlibrary {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 100px;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 1180px;
+}
+.inner {
+  padding: 10px;
+  margin-top: 50px;
+  background-color: rgba(24, 24, 24, 255);
+  margin-right: 12px;
+  border-radius: 10px;
+}
+.inner:hover {
+  background-color: rgb(63, 66, 69);
+}
+.inner:hover .playbutton {
+  display: inline-block;
+}
+.inner img {
+  border-radius: 10px;
+}
+h3{
+  color: white;
+}
+h4{
+  color: wheat;
+}
+
+/* .blockgap{
+  margin-top: 100%;
+  z-index: -999;
+  position: absolute;
+} */
+
+.innerlibrary {
+  padding: 10px;
+  margin-top: 50px;
+  background-color: rgba(24, 24, 24, 255);
+  margin-right: 12px;
+  border-radius: 10px;
+}
+.innerlibrary:hover {
+  background-color: rgb(63, 66, 69);
+}
+.innerlibrary:hover .playbutton {
+  display: inline-block;
+}
+.innerlibrary img {
+  border-radius: 10px;
+}
+.play {
+  position: relative;
+}
+.playbutton {
+  display: none;
+  padding: 0px 12px;
+  position: absolute;
+  bottom: 125px;
+  right: -54px;
+  left: 221px;
+  text-decoration: none;
+}
+/* a {
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+} */
+.playbutton svg{
+  width: 50%;
+  fill: green;
+}
+.favourites{
+  display: inline-block;
+  height: 37px;
+  color: red;
+  margin-top: -4px;
+  margin-left: 2px;
+}
+.fr:after{
+  fill: red;
+}
+h1 {
+  color: white;
+  padding-bottom: 10px;
+}
+button{
+  padding: 12px;
+  margin-left: 50%;
+  margin-top: 50px;
+}
+
+svg.delete {
+  display: inline-block;
+  height: 32px;
+  fill: red;
+  margin-top: -5px;
+  margin-left: 10px;
+}
+
+/* #fifth {
+  width: 100%;
+  height: 10vh;
+  background-color: #fea500;
+  margin-top: 10px;
+} */
+h2 {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  color: white;
+}
+#corner {
+  padding: 10px;
+  font-size: xx-large;
+}
+
+.pop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  /* background-color: red; */
+  background-color: rgba(0, 0, 0, 0.7);
+  box-sizing: border-box;
+  padding: 10px;
+  display: none;
+}
+.pop h1 {
+  padding-top: 17%;
+  padding-left: 5%;
+  color: white;
+  font-weight: bolder;
+}
+.pop h3 {
+  color: white;
+  font-weight: bolder;
+}
+.close {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  color: black;
+  padding: 4px;
+}
+
+
+.uploadpop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  /* background-color: red; */
+  background-color: rgba(0, 0, 0, 0.7);
+  box-sizing: border-box;
+  padding: 10px;
+  display: none;
+}
+.uploadpop h1 {
+  /* padding-top: 17%; */
+  padding-left: 5%;
+  color: white;
+  font-weight: bolder;
+}
+.uploadpop h3 {
+  color: white;
+  font-weight: bolder;
+}
+.uploadclose {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  color: black;
+  padding: 4px;
+}
+
+
+
+.updatepop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  /* background-color: red; */
+  background-color: rgba(0, 0, 0, 0.7);
+  box-sizing: border-box;
+  padding: 10px;
+  display: none;
+}
+.updatepop h1 {
+  /* padding-top: 17%; */
+  padding-left: 5%;
+  color: white;
+  font-weight: bolder;
+}
+.updatepop h3 {
+  color: white;
+  font-weight: bolder;
+}
+.updateclose {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  color: black;
+  padding: 4px;
+}
+
+.innerlibrary a i {
+  font-size: 32px;
+  color: white;
+}

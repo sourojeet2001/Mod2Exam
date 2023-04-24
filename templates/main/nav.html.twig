@@ -1,0 +1,83 @@
+{% block stylesheets %}
+	<link href="{{ asset('css/songs.css') }}" rel="stylesheet">
+	<link href="{{ asset('css/info.css') }}" rel="stylesheet">
+	<link rel="stylesheet" href="{{ asset('fontawesome.css') }}">
+	<link href="{{ asset('css/formstyle.css') }}" rel="stylesheet">
+
+{% endblock %}
+
+{% block javascripts %}
+	<script src="{{asset('js/loadmore.js')}}"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<script src="{{asset('js/popup.js')}}"></script>
+	<script src="{{asset('js/submit.js')}}"></script>
+	<script src="{{asset('js/upload.js')}}"></script>
+	<script src="{{asset('js/search.js')}}"></script>
+	<script src="{{asset('js/validation.js')}}"></script>
+
+{% endblock %}
+
+{% block header %}
+	<header>
+		<nav class="navigation">
+			<div class="flex-wrap item-center">
+				<div class="brand-logo">
+					<div id="fifth">
+						<h2 id="corner">{{app.user ? 'Good Morning' : 'Good Morning'}}</h2>
+					</div>
+					<div class="pop">
+						<div class="close">
+							<h3>X</h3>
+						</div>
+						<div class="updatebtn">
+							<button>
+								<a href="/update">Update Profile</a>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="menu-items flex-wrap">
+					<ul class="flex-wrap">
+						<li>
+							<a class="li-selected" href="/home">Home</a>
+						</li>
+						<li>
+							<div id="uploadsong">
+								<a class="li-selected">Upload Book</a>
+							</div>
+							<div class="uploadpop">
+								<div class="uploadclose">
+									<h3>X</h3>
+								</div>
+								<div>
+									<div class="center">
+										<div>
+											<h1 class="title">Upload Book</h1>
+											<div class="flex center">
+												<input type="text" id="title" name="title" class="input-fields" placeholder="Book Title" required autofocus>
+												<input type="text" id="cost" name="cost" class="input-fields" placeholder="Cost" required autofocus>
+												<input type="text" id="author" name="author" class="input-fields" placeholder="Author" required autofocus>
+												<input type="text" id="description" name="description" class="input-fields" placeholder="Description" required autofocus>
+												<label for="imagePath">Please Upload a suitable thumnail</label>
+												<input type="file" name="imagePath" class="input-fields upload-fields" placeholder="Upload Thumnail" required autofocus>
+												<button class="rounded-btn upload-btn">Upload</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a class="li-selected" href="/{{app.user ? 'logout' : 'login'}}">{{app.user ? 'Logout' : 'Login'}}</a>
+						</li>
+						<li>
+							<div>
+								<input class="form-control me-2" id="search" type="search" placeholder="Search" aria-label="Search">
+								<input class="btn btn-outline-success" type="submit" onclick="search(event)">Search</input>
+						</li>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav></header>{% endblock %}{% block body %}{% endblock %}
